@@ -1,0 +1,1 @@
+(function(b,a){a.behaviors.MDSliderImage={attach:function(c,d){},}})(jQuery,Drupal);

@@ -1,0 +1,10 @@
+name: 'Extra Body Classes'
+description: 'This module will provide extra classes on body tag, Like day, month, year, current day time stamp, current user roles, custom classes'
+type: module
+# core: 8.x
+configure: extra_body_classes.admin
+# Information added by Drupal.org packaging script on 2016-05-19
+version: '8.x-1.x-dev'
+core: '8.x'
+project: 'extra_body_classes'
+datestamp: 1463661880

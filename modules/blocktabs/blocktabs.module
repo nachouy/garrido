@@ -1,0 +1,66 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function blocktabs_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'entity.blocktabs.collection':
+      return '<p>' . t('Block tabs commonly provide a block which contains several tabs.') . '</p>';
+
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function blocktabs_theme() {
+  return array(
+    'blocktabs' => array(
+      'render element' => 'elements',
+    ),
+  );
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function blocktabs_theme_suggestions_blocktabs(array $variables) {
+  $suggestions = array();
+  $blocktabs = $variables['elements']['#blocktabs'];
+  $tabs_id = $blocktabs->id();
+  if (!empty($tabs_id)) {
+    $suggestions[] = 'blocktabs__' . $tabs_id;
+  }
+
+  return $suggestions;
+}
+
+/**
+ * Prepares variables for blocktabs templates.
+ */
+function template_preprocess_blocktabs(&$variables) {
+  $blocktabs = $variables['elements']['#blocktabs'];
+  //unset($variables['elements']['blocktabs']);
+  //foreach($variables['elements'] as $key => $value){
+  //  drupal_set_message('key:' .$key);
+ // }
+  
+  $tabs_id = 'blocktabs-' . $blocktabs->id();
+  $variables['tabs_id'] = $tabs_id;
+  $variables['tabs'] = array();
+  $tabs = $blocktabs->getTabs();
+	foreach ($tabs as $tab) {
+	  $tab_id = $tabs_id . '-' . $tab->getWeight();
+	  $tab_obj = new stdClass(); 
+	  $tab_obj->title = $tab->getTitle();
+	  $tab_obj->id = $tab_id;
+	  $tab_obj->content = $tab->getContent();
+	  $variables['tabs'][$tab_id] = $tab_obj;
+	  
+	}  
+
+
+}

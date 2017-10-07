@@ -1,0 +1,12 @@
+name: 'Block Tabs'
+type: module
+description: 'Block Tabs.'
+# version: VERSION
+# core: 8.x
+# configure: blocktabs.config
+
+# Information added by Drupal.org packaging script on 2016-07-20
+version: '8.x-1.0-alpha3'
+core: '8.x'
+project: 'blocktabs'
+datestamp: 1469002740

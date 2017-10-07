@@ -1,0 +1,7 @@
+blocktabs:
+  version: VERSION
+  js:
+    js/blocktabs.js: {}
+  dependencies:
+    - core/jquery.ui.tabs
+    - core/drupal

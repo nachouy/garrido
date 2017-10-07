@@ -1,0 +1,10 @@
+name: md_slider_thumb
+label: 'MD Slider Thumb'
+effects:
+  dedaa26c-dba1-4bff-a409-9c36bd65a894:
+    uuid: dedaa26c-dba1-4bff-a409-9c36bd65a894
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 160
+      height: 160

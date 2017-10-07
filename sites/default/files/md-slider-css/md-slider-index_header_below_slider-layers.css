@@ -1,0 +1,36 @@
+.md-layer-16-29-0 {
+z-index: 995 !important; color: #ffffff !important;
+ text-align: center;
+ font-size: 2em;
+ font-family: "Open Sans";
+}
+.md-layer-16-29-1 {
+z-index: 996 !important;}
+.md-layer-16-29-2 {
+z-index: 997 !important;}
+.md-layer-16-29-3 {
+z-index: 998 !important; color: #ffffff !important;
+ text-align: center;
+ font-size: 5.1666666666667em;
+ font-weight: 800;
+ font-family: "Open Sans";
+ text-decoration: none;
+}
+.md-layer-16-29-4 {
+z-index: 999 !important; color: #f9f9f9 !important;
+ font-size: 1.6666666666667em;
+ font-family: "Open Sans";
+}
+.md-layer-16-29-5{font-size: inherit; }
+.md-layer-16-29-5 a {
+-webkit-border-top-left-radius: 6px; -moz-border-radius-topleft: 6px; border-top-left-radius: 6px;
+ -webkit-border-top-right-radius: 6px; -moz-border-radius-topright: 6px; border-top-right-radius: 6px;
+ -webkit-border-bottom-left-radius: 6px; -moz-border-radius-bottomleft: 6px; border-bottom-left-radius: 6px;
+ -webkit-border-bottom-right-radius: 6px; -moz-border-radius-bottomright: 6px; border-bottom-right-radius: 6px;
+ color: #ffffff !important;
+ text-align: center;
+ font-size: 1.8333333333333em;
+ font-weight: 600;
+ font-family: "Open Sans";
+}
+.md-layer-16-29-5 {z-index: 1000!important;}

@@ -1,0 +1,14 @@
+name: Field collection
+description: 'Provides a field collection field, to which any number of fields can be attached.'
+package: Field types
+# core: 8.x
+configure: field_collection.overview_field_collections
+type: module
+dependencies:
+  - field
+
+# Information added by Drupal.org packaging script on 2016-08-15
+version: '8.x-1.0-alpha1+29-dev'
+core: '8.x'
+project: 'field_collection'
+datestamp: 1471286341

@@ -1,0 +1,36 @@
+blocktabs.instance.*:
+  type: config_entity
+  label: 'blocktabs instance'
+  mapping:
+    name:
+      type: string
+    label:
+      type: string
+      label: 'Label'
+    tab:
+      type: sequence
+      sequence:
+        type: mapping
+        mapping:
+          id:
+            type: string
+          title:
+            type: string
+            label: 'Tab title'
+          data:
+            type: blocktabs.tab.[%parent.id]
+          weight:
+            type: integer
+          uuid:
+            type: string
+blocktabs.tab.*:
+  type: mapping
+  label: 'Tab settings'
+
+blocktabs.tab.block:
+  type: mapping
+  label: 'block'
+  mapping:
+    block_uuid:
+      label: 'Block UUID'
+      type: string
